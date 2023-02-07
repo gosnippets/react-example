@@ -10,7 +10,7 @@ const users = [
 class HomeComponent extends Component {
   constructor() {
     super();
-    this.state = { name: "Shyam", date: "abc" , users: users };
+    this.state = { name: "Shyam", date: "abc", users: users };
   }
 
   changeName() {
@@ -38,7 +38,7 @@ class HomeComponent extends Component {
           Show Date
         </button>
 
-        <UserDetails username="surya" users={this.state.users}/>
+        <UserDetails username="surya" users={this.state.users} />
       </div>
     );
   }

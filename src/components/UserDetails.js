@@ -5,6 +5,10 @@ class UserDetails extends React.Component {
     super(props);
   }
 
+  componentWillUnmount() {
+    console.log("componentWillUnmount");
+  }
+
   render() {
     const { username, users } = this.props;
     return (
