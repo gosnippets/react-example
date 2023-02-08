@@ -8,7 +8,7 @@ const users = [
 ];
 
 export default class LifeCycleMethodExample extends Component {
-    // Mounting  constructor componentDidMount render
+    // Mounting  constructor componentDidMount render 
     // Updating   render componentDidUpdate shouldComponentUpdate
     // Unmounting  componentWillUnmount
 
@@ -17,6 +17,7 @@ export default class LifeCycleMethodExample extends Component {
         console.log("constructor")
         this.state = { name: "Ram", delete: false }
     }
+
 
     // componentDidMount() {
     //     console.log("componentDidMount")
@@ -55,10 +56,4 @@ export default class LifeCycleMethodExample extends Component {
         </>)
     }
 }
-
-
-// Todo List
-// array= Ram, Ravi
-// Submit , delete
-
 

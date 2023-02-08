@@ -1,0 +1,22 @@
+Lifecycle Methods
+
+
+#Mounting lifecycle methods
+    constructor() : The constructor method is called before the component is mounted to the DOM.
+    static getDerivedStateFromProps() : Its main function is to ensure that the state and props are in sync for when it’s required.
+    render()
+    componentDidMount() : This function is invoked immediately after the component is mounted to the DOM. Run only for the first time.
+
+#Updating lifecycle methods
+    static getDerivedStateFromProps()
+    shouldComponentUpdate() : Once the static getDerivedStateFromProps method is called, the shouldComponentUpdate method is called next.
+    render()
+    getSnapshotBeforeUpdate() : The getSnapshotBeforeUpdate lifecycle method stores the previous values of the state after the DOM is updated. getSnapshotBeforeUpdate() is called right after the render method.
+    componentDidUpdate() : Run everytime when props and state change
+
+#Unmounting lifecycle method
+    componentWillUnmount : The componentWillUnmount lifecycle method is invoked immediately before a component is unmounted and destroyed.
+
+#Error handling lifecycle methods
+    static getDerivedStateFromError() : Whenever an error is thrown in a child component, this method is called first, and the error thrown passed as an argument.
+    componentDidCatch() : The componentDidCatch method is also called after an error in a descendant component is thrown. Apart from the error thrown, it is passed one more argument which represents more information about the error.
