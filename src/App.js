@@ -2,6 +2,7 @@
 // import BankInput from "./bank/BankInput";
 // import Calculator from "./components/Calculator";
 import GetDerivedStateFromProps from "./components/GetDerivedStateFromProps";
+import ApiFetchExample from "./examples/apiExample/ApiFetchExample";
 // import LifeCycleMethodExample from "./components/LifeCycleMethodExample";
 // import User from "./components/User";
 
@@ -12,8 +13,12 @@ function App() {
     // <BankInput/>
     // <Calculator/>
     // <LifeCycleMethodExample/>
-    <GetDerivedStateFromProps/>
+    // <GetDerivedStateFromProps/>
+    <ApiFetchExample/>
+
   );
 }
 
 export default App;
+
+// fetch, axios
