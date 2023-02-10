@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 
+const baseURL= "http://localhost:3033/api";
+
 export default class ApiFetchExample extends Component {
     constructor() {
         super()
@@ -7,15 +9,15 @@ export default class ApiFetchExample extends Component {
     }
 
     componentDidMount() {
-        this.getUser(); // GET Method to call single details
+        this.getUser(3); // GET Method to call single details
         // this.getUsers(); //GET Method
         // this.postTodo(); // POST Method
         // this.putTodo();
-        this.deleteUser()
+        // this.deleteUser()
     }
 
-    getUser = () => {
-        fetch("https://jsonplaceholder.typicode.com/users/2")
+    getUser = (id) => {
+        fetch("https://jsonplaceholder.typicode.com/users/"+id)
             .then((res) => {
                 return res.json()
             }).then((json) => {
