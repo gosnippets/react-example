@@ -20,3 +20,6 @@ Lifecycle Methods
 #Error handling lifecycle methods
     static getDerivedStateFromError() : Whenever an error is thrown in a child component, this method is called first, and the error thrown passed as an argument.
     componentDidCatch() : The componentDidCatch method is also called after an error in a descendant component is thrown. Apart from the error thrown, it is passed one more argument which represents more information about the error.
+
+#Axios : npm i --save axios
+#react-router-dom: npm i --save react-router-dom
