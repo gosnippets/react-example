@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
+import CustomHookExample from '../reactHooks/CustomHookExample'
 import MemoExample from '../reactHooks/MemoExample'
 import ReactHooks from '../reactHooks/ReactHooks'
 import UseCallBackExample from '../reactHooks/UseCallBackExample'
@@ -19,7 +20,8 @@ export default class Home extends Component {
                 {/* <UseReducerExample /> */}
                 {/* <MemoExample /> */}
                 {/* <UseCallBackExample /> */}
-                <UseMemoExample />
+                {/* <UseMemoExample /> */}
+                <CustomHookExample />
 
             </div>
         )

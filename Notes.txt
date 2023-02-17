@@ -1,6 +1,5 @@
 Lifecycle Methods
 
-
 #Mounting lifecycle methods
     constructor() : The constructor method is called before the component is mounted to the DOM.
     static getDerivedStateFromProps() : Its main function is to ensure that the state and props are in sync for when it’s required.
@@ -34,3 +33,5 @@ Lifecycle Methods
   useCallback
   useMemo
   Custom Hooks
+
+Conditional Rendering 
