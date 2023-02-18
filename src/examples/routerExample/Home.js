@@ -1,5 +1,8 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
+import ConditionalRendering from '../ReactBasic/ConditionalRendering'
+import JSXExample from '../ReactBasic/JSXExample'
+import StatelessVsStateful from '../ReactBasic/StatelessVsStateful'
 import CustomHookExample from '../reactHooks/CustomHookExample'
 import MemoExample from '../reactHooks/MemoExample'
 import ReactHooks from '../reactHooks/ReactHooks'
@@ -21,7 +24,10 @@ export default class Home extends Component {
                 {/* <MemoExample /> */}
                 {/* <UseCallBackExample /> */}
                 {/* <UseMemoExample /> */}
-                <CustomHookExample />
+                {/* <CustomHookExample /> */}
+                {/* <JSXExample /> */}
+                {/* <ConditionalRendering /> */}
+                <StatelessVsStateful />
 
             </div>
         )

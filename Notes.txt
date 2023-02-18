@@ -34,4 +34,9 @@ Lifecycle Methods
   useMemo
   Custom Hooks
 
-Conditional Rendering 
+JSX (Javascript XML)
+Conditional Rendering
+Stateless vs stateful
+
+Controlled vs uncontrolled components
+React fragment.
