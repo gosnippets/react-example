@@ -1,7 +1,10 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import ConditionalRendering from '../ReactBasic/ConditionalRendering'
+import ControlledAndUncontrolled from '../ReactBasic/ControlledAndUncontrolled'
+import HOC from '../ReactBasic/HOC'
 import JSXExample from '../ReactBasic/JSXExample'
+import ReactFragment from '../ReactBasic/ReactFragment'
 import StatelessVsStateful from '../ReactBasic/StatelessVsStateful'
 import CustomHookExample from '../reactHooks/CustomHookExample'
 import MemoExample from '../reactHooks/MemoExample'
@@ -27,7 +30,10 @@ export default class Home extends Component {
                 {/* <CustomHookExample /> */}
                 {/* <JSXExample /> */}
                 {/* <ConditionalRendering /> */}
-                <StatelessVsStateful />
+                {/* <StatelessVsStateful /> */}
+                {/* <ControlledAndUncontrolled /> */}
+                {/* <ReactFragment /> */}
+                <HOC />
 
             </div>
         )

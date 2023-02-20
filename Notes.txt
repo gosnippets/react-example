@@ -40,3 +40,6 @@ Stateless vs stateful
 
 Controlled vs uncontrolled components
 React fragment.
+HOC
+
+Redux 
