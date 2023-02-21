@@ -42,4 +42,7 @@ Controlled vs uncontrolled components
 React fragment.
 HOC
 
+Dynamic styles
 Redux 
+npm i redux react-redux @reduxjs/toolkit
+npm i --save redux-logger

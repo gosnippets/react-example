@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import ConditionalRendering from '../ReactBasic/ConditionalRendering'
 import ControlledAndUncontrolled from '../ReactBasic/ControlledAndUncontrolled'
+import DynamicStyles from '../ReactBasic/DynamicStyles'
 import HOC from '../ReactBasic/HOC'
 import JSXExample from '../ReactBasic/JSXExample'
 import ReactFragment from '../ReactBasic/ReactFragment'
@@ -14,6 +15,8 @@ import UseContextExample from '../reactHooks/UseContextExample'
 import UseMemoExample from '../reactHooks/UseMemoExample'
 import UseReducerExample from '../reactHooks/UseReducerExample'
 import UseRefExample from '../reactHooks/UseRefExample'
+import ReduxExample from '../ReduxExample/ReduxExample'
+import UserComponent from '../ReduxExample/UserComponent'
 
 export default class Home extends Component {
     render() {
@@ -33,7 +36,10 @@ export default class Home extends Component {
                 {/* <StatelessVsStateful /> */}
                 {/* <ControlledAndUncontrolled /> */}
                 {/* <ReactFragment /> */}
-                <HOC />
+                {/* <HOC /> */}
+                {/* <DynamicStyles /> */}
+                {/* <ReduxExample /> */}
+                <UserComponent />
 
             </div>
         )

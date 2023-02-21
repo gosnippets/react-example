@@ -1,10 +1,12 @@
 // import HomeComponent from "./components/HomeComponent";
 // import BankInput from "./bank/BankInput";
 // import Calculator from "./components/Calculator";
+import { Provider } from "react-redux";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import GetDerivedStateFromProps from "./components/GetDerivedStateFromProps";
 import ApiAxiosExample from "./examples/apiExample/ApiAxiosExample";
 import ApiFetchExample from "./examples/apiExample/ApiFetchExample";
+import store from "./examples/ReduxExample/Store";
 import About from "./examples/routerExample/About";
 import Blog from "./examples/routerExample/Blog";
 import BlogDetails from "./examples/routerExample/BlogDetails";
@@ -25,17 +27,19 @@ function App() {
     // <ApiFetchExample/>
     // <ApiAxiosExample/>
     <>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<PageLayout/>}>
-            <Route index element={<Home />}></Route>
-            <Route path="/about" element={<About />}></Route>
-            <Route path="/blog" element={<Blog />}></Route>
-            <Route path="/blog/:id/:username" element={<BlogDetails />}></Route>
-            <Route path="*" element={<NoPage />}></Route>
-          </Route>
-        </Routes>
-      </BrowserRouter>
+      <Provider store={store}>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<PageLayout />}>
+              <Route index element={<Home />}></Route>
+              <Route path="/about" element={<About />}></Route>
+              <Route path="/blog" element={<Blog />}></Route>
+              <Route path="/blog/:id/:username" element={<BlogDetails />}></Route>
+              <Route path="*" element={<NoPage />}></Route>
+            </Route>
+          </Routes>
+        </BrowserRouter>
+      </Provider>
     </>
   );
 }
