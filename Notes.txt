@@ -44,5 +44,10 @@ HOC
 
 Dynamic styles
 Redux 
-npm i redux react-redux @reduxjs/toolkit
-npm i --save redux-logger
+npm i --save redux react-redux @reduxjs/toolkit redux-logger axios
+
+https://react-bootstrap.github.io/getting-started/introduction/
+Bootstrap : npm install --save react-bootstrap bootstrap
+Material Design : npm install --save @mui/material @emotion/react @emotion/styled
+Material Icons: npm --save install @mui/icons-material
+https://mui.com/material-ui/getting-started/installation/
