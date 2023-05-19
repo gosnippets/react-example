@@ -13,6 +13,7 @@ import BlogDetails from "./examples/routerExample/BlogDetails";
 import Home from "./examples/routerExample/Home";
 import NoPage from "./examples/routerExample/NoPage";
 import PageLayout from "./examples/routerExample/PageLayout";
+import TicTacToe from "./TicTacToe";
 // import LifeCycleMethodExample from "./components/LifeCycleMethodExample";
 // import User from "./components/User";
 
@@ -27,7 +28,8 @@ function App() {
     // <ApiFetchExample/>
     // <ApiAxiosExample/>
     <>
-      <Provider store={store}>
+    <TicTacToe/>
+      {/* <Provider store={store}>
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<PageLayout />}>
@@ -39,7 +41,7 @@ function App() {
             </Route>
           </Routes>
         </BrowserRouter>
-      </Provider>
+      </Provider> */}
     </>
   );
 }
